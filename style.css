@@ -2,6 +2,27 @@ html {
 	scroll-behavior: smooth;
 }
 
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #1997FF;
+	opacity: 0.2;
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.fa{
+font-size: 100px;
+
+}
+
+
 .name {
 	position: absolute;
 	font-family: 'Roboto', sans-serif;
@@ -9,7 +30,7 @@ html {
 	left: 20%;
 	top: 32%;
 	margin-top: -50px;
-	margin-left: -70px;
+	margin-left: -85px;
 	font-size: 100px;
 	padding: 20px;
 }
@@ -19,12 +40,12 @@ html {
     top: 50%;
     width: 50em;
     margin: 0 auto;
-	margin-left: 430px;
+	margin-left: 400px;
 	margin-bottom: 100px;
 	top: -200;
     border-right: 15px solid rgba(255,255,255,.75);b
 	resize:horizontal;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
@@ -44,35 +65,38 @@ html {
 	left: 20%;
 	top: 8%;
 	margin-top: -50px;
-	margin-left: -90px;
+	margin-left: -100px;
 }
 
 /* Animation */
 .anim-typewriter {
-  		 animation: typewriter 8s steps(34) 1s 1 normal both,
-             		blinkTextCursor 500ms steps(34) infinite normal;
+  		 animation: typewriter 9s steps(28) 1s 1 normal both,
+             		blinkTextCursor 500ms steps(28) infinite normal;
          animation-iteration-count: infinite;
 				 color: black;
-				 font-family: 'Inconsolata', monospace;
+				 /* font-family: 'Inconsolata', monospace; */
 }
 
 @keyframes typewriter {
 
-  from{
+  0%{
   		width: 0;
   }
-  to{
-  	width: 34ch;
+  70%{
+  	width: 28ch;
   }
+	100%{
+		width: 28ch;
+	}
 }
 
 @keyframes blinkTextCursor{
 
-  from{
+  0%{
   		border-right-color: yellow;
   }
 
-  to{
+  100%{
   		border-right-color: transparent;
   }
 
@@ -95,14 +119,14 @@ html {
 	top: 0;
 }
 
-#write1 {
+/* #write1 {
 	max-width: 1800px;
 	margin: 0 auto;
 	background: #f9f9f9;
 	font-size: 24px;
 	padding: 25px;
 	height: 850px;
-}
+} */
 
 #parallax2 {
 	background: url(gilaBend.jpg) no-repeat center;
