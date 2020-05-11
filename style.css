@@ -1,3 +1,83 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.name {
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	left: 20%;
+	top: 32%;
+	margin-top: -50px;
+	margin-left: -70px;
+	font-size: 100px;
+	padding: 20px;
+}
+
+.line-1 {
+    position: absolute;
+    top: 50%;
+    width: 50em;
+    margin: 0 auto;
+	margin-left: 430px;
+	margin-bottom: 100px;
+	top: -200;
+    border-right: 15px solid rgba(255,255,255,.75);b
+	resize:horizontal;
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	animation-iteration-count: 2;
+	color: black;
+
+}
+
+#box {
+  position: relative;
+	height: 100px;
+	z-index: 999;
+	width: 1000px;
+	opacity: 0.5;
+	border-radius: 100px;
+	left: 20%;
+	top: 8%;
+	margin-top: -50px;
+	margin-left: -90px;
+}
+
+/* Animation */
+.anim-typewriter {
+  		 animation: typewriter 8s steps(34) 1s 1 normal both,
+             		blinkTextCursor 500ms steps(34) infinite normal;
+         animation-iteration-count: infinite;
+				 color: black;
+				 font-family: 'Inconsolata', monospace;
+}
+
+@keyframes typewriter {
+
+  from{
+  		width: 0;
+  }
+  to{
+  	width: 34ch;
+  }
+}
+
+@keyframes blinkTextCursor{
+
+  from{
+  		border-right-color: yellow;
+  }
+
+  to{
+  		border-right-color: transparent;
+  }
+
+}
+
 .container {
 	max-width: 1800px;
 	margin: 0 auto;
@@ -6,72 +86,83 @@
 	padding: 25px;
 }
 
-.parallax {
+#parallax1 {
+	position: relative;
 	background: url(waveCrash.jpg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 770px;
+	top: 0;
 }
 
-.parallax2 {
+#write1 {
+	max-width: 1800px;
+	margin: 0 auto;
+	background: #f9f9f9;
+	font-size: 24px;
+	padding: 25px;
+	height: 850px;
+}
+
+#parallax2 {
 	background: url(gilaBend.jpg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 770px;
 }
 
+#write2 {
+	background: url(page3.jpg) no-repeat center;
+	background-size: cover;
+	max-width: 1800px;
+	margin: 0 auto;
+	font-size: 24px;
+	padding: 25px;
+	height: 770px;
+}
 
+.button1 {
+	position: absolute;
+	padding: 30px;
+	top: 85%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+	border-radius: 100px;
+	font-size: 30px;
+	opacity: 0.6;
+	text-decoration: none;
+}
 
+.button2down {
+	position: absolute;
+	padding: 30px;
+	border-radius: 100px;
+	font-size: 30px;
+	opacity: 0.6;
+	margin-top: 45%;
+	margin-left: 40%;
+	text-decoration: none;
+}
 
+.button2up {
+	position: absolute;
+	padding: 30px;
+	border-radius: 100px;
+	font-size: 30px;
+	opacity: 0.6;
+	margin-top: 45%;
+	margin-left: 50%;
+	text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.button3up {
+	position: absolute;
+	padding: 30px;
+	border-radius: 100px;
+	font-size: 30px;
+	opacity: 0.6;
+	text-decoration: none;
+	margin-left: 45%;
+	margin-top: 45%;
+}
